@@ -9,7 +9,7 @@
       state: installed
     loop:
     - gcc
-    - sql
+    - mysql
     - git
     - zip
-    - http
+    - httpd
