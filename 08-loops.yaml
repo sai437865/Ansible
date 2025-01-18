@@ -1,0 +1,14 @@
+- name: INSTALLING PACKAGES
+  hosts: local
+  become: yes
+  tasks:
+  - name: installing packages in order
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: installed
+    loop:
+    - gcc
+    - sql
+    - git
+    - zip
+    - http
