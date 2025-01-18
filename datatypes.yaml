@@ -12,8 +12,8 @@
     - Avakai rasam
     open: true
     chefs:
-      headchef: saikumar
-      juniorchef: Balu
+      headchef: "saikumar"
+      juniorchef: "Balu"
   tasks:
   - name: Printing hotel information
     ansible.builtin.debug:
