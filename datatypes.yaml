@@ -11,7 +11,10 @@
     - Gobi manchurian
     - Avakai rasam
     open: true
+    chefs:
+      headchef: saikumar
+      juniorchef: Balu
   tasks:
   - name: Printing hotel information
     ansible.builtin.debug:
-      msg: "Presenting {{ hotel_name }} with people capacity of {{ capacity }} situated in {{ location }} and its famous for {{ specialities }} is it {{ open }}"
+      msg: "Presenting {{ hotel_name }} with people capacity of {{ capacity }} situated in {{ location }} and its famous for {{ specialities }} is it {{ open }} : yes and there chefs are {{ headchef }} and his assistant is {{ juniorchef }}"
