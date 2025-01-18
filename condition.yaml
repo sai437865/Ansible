@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    my_num: 76
+    my_num: 198
   tasks:
   - name: printing the given value
     ansible.builtin.debug:
