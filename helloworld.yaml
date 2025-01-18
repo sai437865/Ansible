@@ -1,0 +1,6 @@
+- name: Hello Devops
+  hosts: web
+  tasks:
+  - name: Good morning Devops world
+    ansible.builtin.debug:
+      msg: "Hi World , this is the land of cloud computing in devops universe"
