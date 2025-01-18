@@ -1,6 +1,6 @@
 - name: VARIABLES CONCEPT
   hosts: local
-  connections: local
+  connection: local
   tasks:
   - name: printing the variables names
     ansible.builtin.debug:
