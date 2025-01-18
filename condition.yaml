@@ -1,0 +1,15 @@
+- name: checking the value is greater than 100 or not
+  hosts: local
+  connection: local
+  vars:
+    my_num: 76
+  tasks:
+  - name: printing the given value
+    ansible.builtin.debug:
+      msg: "Given value is {{ my_num }} less than 100"
+    when: my_num < 100
+
+  - name: printing the given value
+    ansible.builtin.debug:
+      msg: "Given value is {{ my_num }} greater than 100"
+    when: my_num > 100   
