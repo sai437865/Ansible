@@ -3,7 +3,7 @@
   connection: local
   tasks:
    - name: PLAYBOOK1 under tasknotes1
-     ansible.biultin.debug:
+     ansible.builtin.debug:
       msg: "This print is from PLAYBOOK1"
 
 - name: PLAYBOOK2
@@ -11,5 +11,5 @@
   connection: local
   tasks:
    - name: PLAYBOOK2 under tasknotes2
-     ansible.biultin.debug:
+     ansible.builtin.debug:
       msg: "This print is from PLAYBOOK2"
