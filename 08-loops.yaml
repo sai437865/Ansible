@@ -1,5 +1,6 @@
 - name: INSTALLING PACKAGES
   hosts: local
+  connection: local
   become: yes
   tasks:
   - name: installing packages in order
