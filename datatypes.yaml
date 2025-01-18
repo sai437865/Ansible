@@ -12,10 +12,10 @@
     - Avakai rasam
     open: true
     branches:
-      main: Hyd
+      original: Hyd
       office: vizag
       staff: sec
   tasks:
   - name: Printing hotel information
     ansible.builtin.debug:
-      msg: "Presenting {{ hotel_name }} with people capacity of {{ capacity }} situated in {{ location }} and its famous for {{ specialities }} is it {{ open }} and also its has main branch in {{ main }} and its office in {{ office }} and there staff in {{ sec }}"
+      msg: "Presenting {{ hotel_name }} with people capacity of {{ capacity }} situated in {{ location }} and its famous for {{ specialities }} is it {{ open }} and also its has  branch in {{ original }} and its office in {{ office }} and there staff in {{ sec }}"
