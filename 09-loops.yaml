@@ -1,0 +1,15 @@
+- name: INSTALLING PRORITY PACKAGES
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: installing packages in prority basis order
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name: 'gcc', state: 'present'}
+    - { name: 'mysql', state: 'absent'}
+    - { name: 'zip', state: 'present'}
+    - { name: 'httpd', state: 'absent'}
+    
