@@ -1,0 +1,21 @@
+- name: BABAI HOTEL
+  hosts: local
+  connection: local
+  vars:
+    hotel_name: The babai hotel - Telugu spices
+    capacity: 1000
+    location: Hyderabad
+    specialities:
+    - Ragi Mudha
+    - Chicken Pickles
+    - Gobi manchurian
+    - Avakai rasam
+    open: true
+    branches:
+      main: Hyd
+      office: vizag
+      staff: sec
+  tasks:
+  - name: Printing hotel information
+    ansible.builtin.debug:
+      msg: "Presenting {{ hotel_name }}" with people capacity of {{ capacity }} situated in {{ location }} and its famous for {{ specialities }} is it {{ open }}? and also its has main branch in {{ main }} and its office in {{ office }} and there staff in {{ sec }}"
