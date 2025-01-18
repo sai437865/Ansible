@@ -2,6 +2,6 @@
   hosts: local
   connections: local
   tasks:
-    name: printing the variables names
+  - name: printing the variables names
     ansible.builtin.debug:
       msg: "Saikumar has million , Knowledge is Power , Willpower always towards God"
