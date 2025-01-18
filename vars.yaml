@@ -1,7 +1,11 @@
 - name: VARIABLES CONCEPT
   hosts: local
   connection: local
+  vars:
+    MILLION: "million"
+    POWER: is power
+    GOD: always towards god
   tasks:
   - name: printing the variables names
     ansible.builtin.debug:
-      msg: "Saikumar has million , Knowledge is Power , Willpower always towards God"
+      msg: "Saikumar has {{ MILLION }} , Knowledge {{ POWER }} , Willpower {{ GOD }}"
