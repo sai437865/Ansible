@@ -2,7 +2,7 @@
   hosts: mysql
   become: yes
   vars:
-    mysql_root_password: MAHA@deva1234
+    mysql_root_password: DevOps@321
   tasks:
   - name: Install MySQL libraries
     ansible.builtin.pip:
